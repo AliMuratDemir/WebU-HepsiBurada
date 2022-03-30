@@ -1,0 +1,20 @@
+Created by fatih.karadag on 28.09.2020
+
+This is a concept file with following syntax for each concept.
+# Kullanici ekle Ad:<ad>,Soyad:<soyad>,Email:<email>,CepTelefonu:<telefon>,TCKN:<tckn>,Password1:<password1>,Password2:<password2>,AktifOlsunMu:<aktiflik>
+* Netahsilat Kullanici Listesi Yeni Kullanici butonu tıkla
+* Netahsilat Odeme Sayfa inputName:"Adı" id input giriş inputId="Entity_Name",girilecekDeger:<ad>
+* Netahsilat Odeme Sayfa inputName:"Soyadı" id input giriş inputId="Entity_Surname",girilecekDeger:<soyad>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Entity_Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Cep Telefon" id input giriş inputId="Entity_MobilePhone",girilecekDeger:<telefon>
+* Netahsilat Odeme Sayfa inputName:"Tckn" id input giriş inputId="Entity_Tckn",girilecekDeger:<tckn>
+* Netahsilat Odeme Sayfa inputName:"password1" id input giriş inputId="Entity_Password",girilecekDeger:<password1>
+* Netahsilat Odeme Sayfa inputName:"password2" id input giriş inputId="Entity_PasswordAgain",girilecekDeger:<password2>
+* Netahsilat Kullanici Listesi Yeni Kullanici aktif olsun mu:<aktiflik>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+
+
+# Kullanici guncelle Password1:<password1>,Password2:<password2>
+* Netahsilat Odeme Sayfa inputName:"password1" id input giriş inputId="Entity_Password",girilecekDeger:<password1>
+* Netahsilat Odeme Sayfa inputName:"password2" id input giriş inputId="Entity_PasswordAgain",girilecekDeger:<password2>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam

@@ -1,0 +1,655 @@
+Created by fatih.karadag on 17.08.2020
+
+This is a concept file with following syntax for each concept.
+# Concept Netahsilat MM basarili islem Kontrol k.adi=<username>,sifre=<password>
+* Netahsilat Login userName:<username>,password:<password> ile giris yap
+* Netahsilat ANA Menu "İŞLEMLER" Tıkla
+* Netahsilat Menu "İŞLEM LİSTESİ" Tıkla
+* Netahsilat MM İşlem ListesiReference No dan arama
+* Netahsilat "Listele" Butonuna Tıkla
+* Netahsilat Islem Listesi islem Detaylari tıkla
+* Netahsilat  basarili islem Durumu Kontrol
+* Netahsilat islemDetaySayfasi Bilgilendirme Formu Tikla
+* Netahsilat islem detaylari Bilgilendirme Formu Satis Sozlesmesi kontrol
+
+# Concept Netahsilat MM Netahsilat dan alinan Odeme Kontrol k.adi=<username>,sifre=<password>
+* Netahsilat Login userName:<username>,password:<password> ile giris yap
+* Netahsilat ANA Menu "ÜYE YÖNETİMİ" Tıkla
+* Netahsilat Menu "ÜYE YÖNETİMİ" Tıkla
+
+# Concept Netahsilat Odeme odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,kartAy:<kartAy>,kartYil:<kartYil>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,posTitle:<posTitle>,taksit:<taksit>
+* Netahsilat MM Odeme Odeme Şekli Kkart
+* Netahsilat Odeme Sayfa input giriş inputName="Tutar",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa input giriş inputName="Ad Soyad",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa input giriş inputName="Kart No",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa input giriş inputName="TC Kimlik No",girilecekDeger:<TCKimlikNo>
+* Netahsilat HPM Odeme KKart ExpireDate ay:<kartAy>,yil:<kartYil>
+* Netahsilat Odeme Sayfa input giriş inputName="CVC",girilecekDeger:<kartCvc>
+* Netahsilat HPM Odeme taksit sec posTitle:<posTitle>,taksit:<taksit>
+* Netahsilat Odeme Tamamla
+* Netahsilat basarili odeme referans numarası Al
+
+# Concept Netahsilat Uyeliksiz Odeme unvan:<unvan>,adSoyad:<adSoyad>,ePosta:<ePosta>,telefon:<telefon>,tutar:<tutar>,paraBirimi:<paraBirimi>,odemeSeti:<odemeSeti>,aciklama:<aciklama>
+* Netahsilat Uyeliksiz Odeme inputName:"Ünvan",deger:<unvan>
+* Netahsilat Uyeliksiz Odeme inputName:"Ad Soyad",deger:<adSoyad>
+* Netahsilat Uyeliksiz Odeme inputName:"E-Posta",deger:<ePosta>
+* Netahsilat Uyeliksiz Odeme inputName:"Telefon",deger:<telefon>
+* Netahsilat Uyeliksiz Ekle Tikla
+* Netahsilat uyeliksiz odeme kayıt edilen user  chck tıkla
+* Netahsilat Uyeliksiz Odeme inputName:"Tutar",deger:<tutar>
+* Netahsilat Uyeliksiz odeme selectName:"Para Birimi",secilecekDeger:<paraBirimi>
+//* Netahsilat Uyeliksiz odeme selectName:"Ödeme Seti",secilecekDeger:<odemeSeti>
+* Netahsilat EmailOrder Aciklama gir.aciklama:<aciklama>
+
+# Concept Normal Netahsilat Odeme aciklama:<aciklama>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,databasePosAd:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa input giriş inputName="Açıklama",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa input giriş inputName="strAmount:",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa input giriş inputName="Ad, Soyad",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa input giriş inputName="Kart No",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa input giriş inputName="Tarih",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa input giriş inputName="CVV",girilecekDeger:<kartCvc>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Tamamla
+* Netahsilat basarili odeme referans numarası Al
+
+# Concept Normal Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>
+//* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+//* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+//* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+//* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+
+# Concept TanimliOdeme Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeKalemiSec:<odemeKalemi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Tanimli Odeme odeme kalemi sec <odemeKalemi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+//tutar 0 girilirse mevcut borç tutarına ellenmez.
+
+# Concept Borc Odeme Netahsilat id Odeme DinamikAlan tutar:<tutar>,urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,borcTip1:<tip1>,borcTip2:<tip2>,odemeSekliSec:<odemeSekliSec>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>,3DTutarKontrolEt:<kontrolEdilecekMi>,3DBeklenenTutar:<3DbeklenenTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Borc Odeme tip1:<tip1>,tip2:<tip2>,tutar:<tutar>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Threed sayfasi Tutar Kontrolu KontrolEdilecekMi:<kontrolEdilecekMi>,Tutar:<3DbeklenenTutar>
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+
+# Concept Netahsilat borc yukle11
+* Netahsilat Config Login userType:"admin" ile giris yap
+* Netahsilat ANA Menu "CARİ HESAP YÖNETİMİ" Tıkla
+* Netahsilat Menu "BORÇ AKTARIMI" Tıkla
+* Netahsilat borç aktarım excel yükle Dosya "borc_aktarim.xlsx" yükle
+* "3" Saniye Bekle
+* Netahsilat Çıkış
+
+# Concept Netahsilat borc yukle
+* Netahsilat Borc yukle database
+
+# Concept Çek Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,cekTutar:<cekTutar>,cekBankaSec:<cekBankaSec>,sehir:<sehir>,sube:<sube>,cekHesapNo:<cekHesapNo>,cekBelgeNo:<cekBelgeNo>,vadeTarihi:<vadeTarihi>,cekTipi:<cekTipi>,cekSahibi:<cekSahibi>,vergiTcNo:<vergiTcNo>,vergiDairesi:<vergiDairesi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"ÇekTutar" id input giriş inputId="ChequeAmount",girilecekDeger:<cekTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Çek Banka Seç",id selectId:"ChequeBankId",secilecekDeger:<cekBankaSec>
+* Netahsilat Odeme Sayfa Id selectName:"Şehir",id selectId:"ChequeCityId",secilecekDeger:<sehir>
+* Netahsilat Odeme Sayfa Id selectName:"Şube",id selectId:"ChequeBranchId",secilecekDeger:<sube>
+* Netahsilat Odeme Sayfa inputName:"Çek HesapNo" id input giriş inputId="ChequeAccountNumber",girilecekDeger:<cekHesapNo>
+* Netahsilat Odeme Sayfa inputName:"Çek Belge No" id input giriş inputId="ChequeNumber",girilecekDeger:<cekBelgeNo>
+* Netahsilat Odeme Sayfa inputName:"Vade Tarih" id input giriş inputId="ChequeExpiryDate",girilecekDeger:<vadeTarihi>
+* Netahsilat Odeme Sayfa Id selectName:"Çek tipi",id selectId:"ChequeDocumentTypeId",secilecekDeger:<cekTipi>
+* Netahsilat Odeme Sayfa inputName:"Çek Sahibi" id input giriş inputId="ChequeSecondaryPerson",girilecekDeger:<cekSahibi>
+* Netahsilat Odeme Sayfa inputName:"Vergi/TC No" id input giriş inputId="ChequeTaxTcknNumber",girilecekDeger:<vergiTcNo>
+* Netahsilat Odeme Sayfa inputName:"Vergi Dairesi" id input giriş inputId="ChequeTaxOffice",girilecekDeger:<vergiDairesi>
+* Netahsilat Odeme Sayfasi "Ekle",butonNumara:"1" Tıkla
+* "3" Saniye Bekle
+* Netahsilat Kaydedilenler Cek,Senet tutar:<cekTutar>
+* Netahsilat Odeme Tamamla
+* Netahsilat Cek,Nakit,Senet basarili Odeme Kontrol
+
+
+# Concept Nakit Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,dovizTipi:<dovizTipi>,Tutar:<tutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Nakit  Odeme Tutar Doviz tipi <dovizTipi> Sec
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Tamamla
+* Netahsilat Cek,Nakit,Senet basarili Odeme Kontrol
+
+
+# Concept Senet Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,SenetTutar:<senetTutar>,VadeTarihi:<vadeTarihi>,KefilDurumu:<kefilDurumu>,Kefil:<kefil>,vergiTCNO:<vergiTCNO>,vergiDairesi:<vergiDairesi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Senet Tutar" id input giriş inputId="VoucherAmount",girilecekDeger:<senetTutar>
+* Netahsilat Odeme Sayfa inputName:"Vade Tarihi" id input giriş inputId="VoucherExpiryDate",girilecekDeger:<vadeTarihi>
+* Netahsilat Odeme Sayfa Id selectName:"Çek tipi",id selectId:"VoucherDocumentTypeId",secilecekDeger:<kefilDurumu>
+* Netahsilat Odeme Sayfa inputName:"Kefil" id input giriş inputId="VoucherSecondaryPerson",girilecekDeger:<kefil>
+* Netahsilat Odeme Sayfa inputName:"vergiTCNo" id input giriş inputId="VoucherTaxTcknNumber",girilecekDeger:<vergiTCNO>
+* Netahsilat Odeme Sayfa inputName:"vergiDairesi" id input giriş inputId="VoucherTaxOffice",girilecekDeger:<vergiDairesi>
+* Netahsilat Odeme Sayfasi "Ekle",butonNumara:"2" Tıkla
+* "3" Saniye Bekle
+* Netahsilat Kaydedilenler Cek,Senet tutar:<senetTutar>
+* Netahsilat Odeme Tamamla
+* Netahsilat Cek,Nakit,Senet basarili Odeme Kontrol
+
+#Concept Netahsilat Sartli Komisyon cardBin:<cardBin>,tutar:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<cardBin>
+
+# Concept Çek Netahsilat id Cek Kayit sonrası  alanlarin temizlenmesi kontrol cekTutar:<cekTutar>,cekBankaSec:<cekBankaSec>,sehir:<sehir>,sube:<sube>,cekHesapNo:<cekHesapNo>,cekBelgeNo:<cekBelgeNo>,vadeTarihi:<vadeTarihi>,cekTipi:<cekTipi>
+* Netahsilat input value kontrol input inputName:"ÇekTutar",inputId:"ChequeAmount",olmasiGerekenDeger:<cekTutar>
+* Netahsilat Odeme Sayfa Id select value kontrol selectName:"Çek Banka Seç",id selectId:"ChequeBankId",olmasiGerekenDeger:<cekBankaSec>
+* Netahsilat Odeme Sayfa Id select value kontrol selectName:"Şehir",id selectId:"ChequeCityId",olmasiGerekenDeger:<sehir>
+* Netahsilat Odeme Sayfa Id select value kontrol selectName:"Şube",id selectId:"ChequeBranchId",olmasiGerekenDeger:<sube>
+* Netahsilat input value kontrol input inputName:"Çek HesapNo",inputId:"ChequeAccountNumber",olmasiGerekenDeger:<cekHesapNo>
+* Netahsilat input value kontrol input inputName:"Çek Belge No",inputId:"ChequeNumber",olmasiGerekenDeger:<cekBelgeNo>
+* Netahsilat input value kontrol input inputName:"Vade Tarih",inputId:"ChequeExpiryDate",olmasiGerekenDeger:<vadeTarihi>
+* Netahsilat input value kontrol input inputName:"Çek HesapNo",inputId:"ChequeAccountNumber",olmasiGerekenDeger:<cekHesapNo>
+* Netahsilat Odeme Sayfa Id select value kontrol selectName:"ÇekÇek Belge No tipi",id selectId:"ChequeDocumentTypeId",olmasiGerekenDeger:<cekTipi>
+
+
+# Concept Çek Netahsilat id Odeme Sadece Cek Kayit DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,cekTutar:<cekTutar>,cekBankaSec:<cekBankaSec>,sehir:<sehir>,sube:<sube>,cekHesapNo:<cekHesapNo>,cekBelgeNo:<cekBelgeNo>,vadeTarihi:<vadeTarihi>,cekTipi:<cekTipi>,cekSahibi:<cekSahibi>,vergiTcNo:<vergiTcNo>,vergiDairesi:<vergiDairesi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"ÇekTutar" id input giriş inputId="ChequeAmount",girilecekDeger:<cekTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Çek Banka Seç",id selectId:"ChequeBankId",secilecekDeger:<cekBankaSec>
+* Netahsilat Odeme Sayfa Id selectName:"Şehir",id selectId:"ChequeCityId",secilecekDeger:<sehir>
+* Netahsilat Odeme Sayfa Id selectName:"Şube",id selectId:"ChequeBranchId",secilecekDeger:<sube>
+* Netahsilat Odeme Sayfa inputName:"Çek HesapNo" id input giriş inputId="ChequeAccountNumber",girilecekDeger:<cekHesapNo>
+* Netahsilat Odeme Sayfa inputName:"Çek Belge No" id input giriş inputId="ChequeNumber",girilecekDeger:<cekBelgeNo>
+* Netahsilat Odeme Sayfa inputName:"Vade Tarih" id input giriş inputId="ChequeExpiryDate",girilecekDeger:<vadeTarihi>
+* Netahsilat Odeme Sayfa Id selectName:"Çek tipi",id selectId:"ChequeDocumentTypeId",secilecekDeger:<cekTipi>
+* Netahsilat Odeme Sayfa inputName:"Çek Sahibi" id input giriş inputId="ChequeSecondaryPerson",girilecekDeger:<cekSahibi>
+* Netahsilat Odeme Sayfa inputName:"Vergi/TC No" id input giriş inputId="ChequeTaxTcknNumber",girilecekDeger:<vergiTcNo>
+* Netahsilat Odeme Sayfa inputName:"Vergi Dairesi" id input giriş inputId="ChequeTaxOffice",girilecekDeger:<vergiDairesi>
+* Netahsilat Odeme Sayfasi "Ekle",butonNumara:"1" Tıkla
+//* "3" Saniye Bekle
+* Netahsilat Kaydedilenler Cek,Senet tutar:<cekTutar>
+
+
+
+
+# Concept Senet Netahsilat sadece senet kayıt id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,SenetTutar:<senetTutar>,VadeTarihi:<vadeTarihi>,KefilDurumu:<kefilDurumu>,Kefil:<kefil>,vergiTCNO:<vergiTCNO>,vergiDairesi:<vergiDairesi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Senet Tutar" id input giriş inputId="VoucherAmount",girilecekDeger:<senetTutar>
+* Netahsilat Odeme Sayfa inputName:"Vade Tarihi" id input giriş inputId="VoucherExpiryDate",girilecekDeger:<vadeTarihi>
+* Netahsilat Odeme Sayfa Id selectName:"Çek tipi",id selectId:"VoucherDocumentTypeId",secilecekDeger:<kefilDurumu>
+* Netahsilat Odeme Sayfa inputName:"Kefil" id input giriş inputId="VoucherSecondaryPerson",girilecekDeger:<kefil>
+* Netahsilat Odeme Sayfa inputName:"vergiTCNo" id input giriş inputId="VoucherTaxTcknNumber",girilecekDeger:<vergiTCNO>
+* Netahsilat Odeme Sayfa inputName:"vergiDairesi" id input giriş inputId="VoucherTaxOffice",girilecekDeger:<vergiDairesi>
+* Netahsilat Odeme Sayfasi "Ekle",butonNumara:"2" Tıkla
+* "3" Saniye Bekle
+* Netahsilat Kaydedilenler Cek,Senet tutar:<senetTutar>
+
+
+# Concept Senet Netahsilat senet kayıt sonrası alanlarin temilzenmesi kontrol id Odeme DinamikAlan SenetTutar:<senetTutar>,VadeTarihi:<vadeTarihi>,KefilDurumu:<kefilDurumu>,vergiTCNO:<vergiTCNO>,vergiDairesi:<vergiDairesi>
+* Netahsilat input value kontrol input inputName:"Senet Tutar",inputId:"VoucherAmount",olmasiGerekenDeger:<senetTutar>
+* Netahsilat input value kontrol input inputName:"Vade Tarihi",inputId:"VoucherExpiryDate",olmasiGerekenDeger:<vadeTarihi>
+* Netahsilat input value kontrol input inputName:"vergiTCNo",inputId:"VoucherTaxTcknNumber",olmasiGerekenDeger:<vergiTCNO>
+* Netahsilat input value kontrol input inputName:"vergiDairesi",inputId:"VoucherTaxOffice",olmasiGerekenDeger:<vergiDairesi>
+* Netahsilat Odeme Sayfa Id select value kontrol selectName:"senet tipi",id selectId:"VoucherDocumentTypeId",olmasiGerekenDeger:<kefilDurumu>
+
+# Concept Fiziksel Pos Netahsilat  id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,tutar:<tutar>,posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Tamamla
+* "3" Saniye Bekle
+* Netahsilat Normal basarili odeme referans numarası Al
+
+# Concept Netahsilat id Odeme Kalemi Ekle Genel Bilgiler name:<name>,grubu:<grubu>,Id:<id>,paraBirimi:<paraBirimi>,gorunurOlsunMu:<gorunurOlsunMu>
+* Netahsilat Odeme Sayfa inputName:"Ödeme Kalemi" id input giriş inputId="Name",girilecekDeger:<name>
+* Netahsilat Odeme Sayfa Id selectName:"Grubu",id selectId:"ParentId",secilecekDeger:<grubu>
+* Netahsilat Odeme Sayfa inputName:"Id (Entegrasyon için)" id input giriş inputId="IntegrationId",girilecekDeger:<id>
+* Netahsilat Odeme Sayfa Id selectName:"Para Birimi",id selectId:"CurrencyTypeId",secilecekDeger:<paraBirimi>
+* Netahsilat checkbox secilsin mi? inputName:"Görünür",inputId:"IsActive" secilsinMi:<gorunurOlsunMu>
+
+# Concept Netahsilat id Odeme Kalemi Ekle Ayarlar Tab tutar:<tutar>,erpCode:<erpCode>,satisBaslangicTarihi:<satisBaslangicTarihi>,satisBitisTarihi:<satisBitisTarihi>,odemeSeti:<odemeSeti>,cariHesapTipi:<cariHesapTipi>, para birimleri TL:<TlolsunMu>,USD:<USDolsunMu>,EUR:<EURolsunMu>,GBP:<GBPolsunMu>,SAR:<SARolsunMu>,tutarDeğiştirilebilirOlsunMu:<tutarDegistirilebilirOlsunMu>,uyeliksizKullanicilarGorsunMu:<uyeliksizKullanicilarGorsunMu>,musteriGorsunMu:<musteriGorsunMu>,anaBayiKullanicilariGorsunMu:<anaBayiKullanicilariGorsunMu>,altBayiKullanicilariGorsunMu:<altBayiKullanicilariGorsunMu>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="Price",girilecekDeger:<tutar>
+* Netahsilat checkbox secilsin mi? inputName:"Tutar değiştirilebilir",inputId:"IsPriceEditable" secilsinMi:<tutarDegistirilebilirOlsunMu>
+* Netahsilat checkbox secilsin mi? inputName:"Uyelik kullanıcılar görür",inputId:"CanAnonymousVendorBuy" secilsinMi:<uyeliksizKullanicilarGorsunMu>
+* Netahsilat checkbox secilsin mi? inputName:"musteri Görür",inputId:"CanIndividualVendorBuy" secilsinMi:<musteriGorsunMu>
+* Netahsilat checkbox secilsin mi? inputName:"Ana bayi kullanicilari Gorürü",inputId:"CanMainVendorBuy" secilsinMi:<anaBayiKullanicilariGorsunMu>
+* Netahsilat checkbox secilsin mi? inputName:"Alt bayi kullanıcıları görür",inputId:"CanSubVendorBuy" secilsinMi:<altBayiKullanicilariGorsunMu>
+* Netahsilat Odeme Sayfa inputName:"ErpCode" id input giriş inputId="ErpCode",girilecekDeger:<erpCode>
+* Netahsilat Odeme Sayfa inputName:"Satış başlangıc tarihi" id input giriş inputId="ActiveFrom",girilecekDeger:<satisBaslangicTarihi>
+* Netahsilat Odeme Sayfa inputName:"Satış Bitiş tarihi" id input giriş inputId="ActiveUntil",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa Id selectName:"Odeme Seti",id selectId:"PaymentSetDefinitionId",secilecekDeger:<odemeSeti>
+* Netahsilat Odeme Sayfa Id selectName:"Cari Hesap Tipi",id selectId:"CurrentAccountTypeId",secilecekDeger:<cariHesapTipi>
+//* Netahsilat checkbox secilsin mi? inputName:"TL",inputId:"Currencies_PostedList_Ids" secilsinMi:<TlolsunMu>
+//* Netahsilat checkbox secilsin mi? inputName:"USD",inputId:"Currencies_PostedList_Ids" secilsinMi:<USDolsunMu>
+//* Netahsilat checkbox secilsin mi? inputName:"EUR",inputId:"Currencies_PostedList_Ids" secilsinMi:<EURolsunMu>
+//* Netahsilat checkbox secilsin mi? inputName:"GBP",inputId:"Currencies_PostedList_Ids" secilsinMi:<GBPolsunMu>
+//* Netahsilat checkbox secilsin mi? inputName:"SAR",inputId:"Currencies_PostedList_Ids" secilsinMi:<SARolsunMu>
+# Concept Odeme Kalemi Guncelle odemeKalemiAd:<odemeKalemiAd>,Id:<id>
+* Netahsilat Odeme Kalemlemi Guncelle. odemeKalemiAd:<odemeKalemiAd>
+* Netahsilat Odeme Sayfa inputName:"Id (Entegrasyon için)" id input giriş inputId="IntegrationId",girilecekDeger:<id>
+
+
+# Concept Netahsilat id Odeme Grubu Ekle Ayarlar Tab OdemeSeti:<odemeSeti>,cariHesapTipi:<cariHesapTipi>
+* Netahsilat Odeme Sayfa Id selectName:"Odeme Seti",id selectId:"PaymentSetDefinitionId",secilecekDeger:<odemeSeti>
+* Netahsilat Odeme Sayfa Id selectName:"Cari Hesap Tipi",id selectId:"CurrentAccountTypeId",secilecekDeger:<cariHesapTipi>
+
+# Concept Yeni Bin Grubu Ekle ad:<ad>,Kart Sınıfı:<kartSinifi>,kart masrkasi:<kartMarkasi>,kartBanke:<kartBanka>,bankaKartAdi:<bankaKartAdi>,kartTipi:<kartTipi>,kartProgramAdi:<kartProgramAdi>,bankKartMarkasi:<bankKartMarkasi>
+* Netahsilat link text tikla linkText:"YENİ BİN GRUBU EKLE"
+* Netahsilat yeni bin grubu ekle Ad gir.ad:<ad>
+* Netahsilat Odeme Sayfa Id selectName:"Kart Sınıfı",id selectId:"SelectedCardParams_CreditCardClasses",secilecekDeger:<kartSinifi>
+* Netahsilat Odeme Sayfa Id selectName:"Kart markası",id selectId:"SelectedCardParams_CreditCardTypes",secilecekDeger:<kartMarkasi>
+* Netahsilat Odeme Sayfa Id selectName:"Kart banka",id selectId:"SelectedCardParams_CreditCardBanks",secilecekDeger:<kartBanka>
+* Netahsilat Odeme Sayfa Id selectName:"Banka Kart Adı",id selectId:"SelectedCardParams_CreditCardNames",secilecekDeger:<bankaKartAdi>
+* Netahsilat Odeme Sayfa Id selectName:"Kart tipi",id selectId:"SelectedCardParams_CreditCardOrganizationTypes",secilecekDeger:<kartTipi>
+* Netahsilat Odeme Sayfa Id selectName:"Kart Program Adı",id selectId:"SelectedCardParams_CreditCardPrograms",secilecekDeger:<kartProgramAdi>
+* Netahsilat Odeme Sayfa Id selectName:"banka kartı markası",id selectId:"SelectedCardParams_CreditCardBrands",secilecekDeger:<bankKartMarkasi>
+* Netahsilat "Tamam" Butonuna Tıkla
+
+# Concept Kampanya Secim Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+//* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Sartli Komisyon Odeme taksit sec binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* "3" Saniye Bekle
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+# Concept Kampanya Site Bin Kontrolu Kapali Secim Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Bin Kontrol Kapali Odeme taksit gelmesi gerkenler binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* "3" Saniye Bekle
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+
+# Concept Kampanya TanimliOdeme Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeKalemiSec:<odemeKalemi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>,sonTutarBilgileriKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi>,sonTaksit:<sonTaksit>,sonTaksitTutar:<sonTaksitTutar>,sonTutar:<sonTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Tanimli Odeme odeme kalemi sec <odemeKalemi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Sartli Komisyon Odeme taksit sec binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Son tutarda taksit ve tutar kontrol. sonTutarKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi> taksit:<sonTaksit>,taksitTutari:<sonTaksitTutar>,sonTutari:<sonTutar>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+//tutar 0 girilirse mevcut borç tutarına ellenmez.
+
+
+
+# Concept Kampanya Site Bin Kontrolu Kapali TanimliOdeme Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeKalemiSec:<odemeKalemi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>,sonTutarBilgileriKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi>,sonTaksit:<sonTaksit>,sonTaksitTutar:<sonTaksitTutar>,sonTutar:<sonTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Tanimli Odeme odeme kalemi sec <odemeKalemi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Bin Kontrol Kapali Odeme taksit gelmesi gerkenler binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Son tutarda taksit ve tutar kontrol. sonTutarKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi> taksit:<sonTaksit>,taksitTutari:<sonTaksitTutar>,sonTutari:<sonTutar>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+//tutar 0 girilirse mevcut borç tutarına ellenmez.
+
+
+
+
+# Netahsilat Sartli Komisyon Odeme taksit sec binName:<binName>,posDatabaseName:<posDatabaseName>,taksit:<taksit>,tutar:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Sartli Komisyon Odeme taksit sec binName:<binName>,posDatabaseName:<posDatabaseName>,taksit:<taksit>
+
+# Concept Kampanya Borc Odeme Netahsilat id Odeme DinamikAlan tutar:<tutar>,urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,borcTip1:<tip1>,borcTip2:<tip2>,odemeSekliSec:<odemeSekliSec>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>,3DTutarKontrolEt:<kontrolEdilecekMi>,sonTutarBilgileriKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi>,sonTaksit:<sonTaksit>,sonTaksitTutar:<sonTaksitTutar>,sonTutar:<sonTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Borc Odeme tip1:<tip1>,tip2:<tip2>,tutar:<tutar>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Sartli Komisyon Odeme taksit sec binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme Son tutarda taksit ve tutar kontrol. sonTutarKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi> taksit:<sonTaksit>,taksitTutari:<sonTaksitTutar>,sonTutari:<sonTutar>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Threed sayfasi Tutar Kontrolu KontrolEdilecekMi:<kontrolEdilecekMi>,Tutar:<tutar>
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+
+# Concept Kampanya Borc Site Bin Kontrol Kapali Odeme Netahsilat id Odeme DinamikAlan tutar:<tutar>,urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,borcTip1:<tip1>,borcTip2:<tip2>,odemeSekliSec:<odemeSekliSec>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,databasePosAd:<databasePosAd>,taksit:<taksit>,gelmesiGerekenTaksitler:<gelmesiGerekenTaksitler>,kampanyaSecim:<kampanyaSecim>,3DKullan:<3DKullan>,3DSifre:<3DSifre>,BinKontrolYapilsinMi:<kontrolYapilsinMi>,3DTutarKontrolEt:<kontrolEdilecekMi>,sonTutarBilgileriKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi>,sonTaksit:<sonTaksit>,sonTaksitTutar:<sonTaksitTutar>,sonTutar:<sonTutar>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Borc Odeme tip1:<tip1>,tip2:<tip2>,tutar:<tutar>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat Bin Kontrol Kapali Odeme taksit gelmesi gerkenler binName:<databasePosAd>,posDatabaseName:<databasePosAd>,taksit:<gelmesiGerekenTaksitler>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme Sayfa Id selectName:"Kampanya Seç",id selectId:"Campaign",secilecekDeger:<kampanyaSecim>
+* Netahsilat Odeme Bın kontrol KontrolYapilsinMi:<kontrolYapilsinMi>,posName:<databasePosAd>
+* Netahsilat Odeme Son tutarda taksit ve tutar kontrol. sonTutarKontrolEdilsinMi:<sonTutarBilgileriKontrolEdilsinMi> taksit:<sonTaksit>,taksitTutari:<sonTaksitTutar>,sonTutari:<sonTutar>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Threed sayfasi Tutar Kontrolu KontrolEdilecekMi:<kontrolEdilecekMi>,Tutar:<tutar>
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+
+# SanalPos Tek Çekim alt ve ust limit belirlenip Odeme Setinden Kontrol edilmesi posName:<posName>,altLimit:<altLimit>,ustLimit:<ustLimit>,odemeSetiName:<odemeSetiName>
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:<posName>,islemSec:"Güncelle"
+* Netahsilat popup tab gec. tabTitle:"Diğer Komisyon Oranları"
+* Netahsilat Odeme Sayfa inputName:"Alt Limit" id input giriş inputId="DefaultPosMinLimit",girilecekDeger:<altLimit>
+* Netahsilat Odeme Sayfa inputName:"Üst Limit" id input giriş inputId="DefaultPosMaxLimit",girilecekDeger:<ustLimit>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+* "3" Saniye Bekle
+* Netahsilat ANA Menu "SİTE YÖNETİMİ" Tıkla
+* Netahsilat Alt Menu menuAd:"POS AYARLARI",altMenuAd:"ÖDEME SETLERİ"
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:<odemeSetiName>,islemSec:"Bu ödeme setine bağlı sanal posları görüntüle"
+* "3" Saniye Bekle
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:"Akbank Test Posu",islemSec:"Güncelle"
+* Netahsilat popup tab gec. tabTitle:"Diğer Komisyon Oranları"
+* "3" Saniye Bekle
+* Netahsilat Tek  Cekim Pos checkbox secilsin mi? inputName:"tek çekim posu olsun",inputId:"IsDefaultPos" secilsinMi:"true"
+* Netahsilat inputName:"Alt Limit" id input degeri kontrol et inputId="DefaultPosMinLimit",beklenenDeger:<altLimit>
+* Netahsilat inputName:"Ust Limit" id input degeri kontrol et inputId="DefaultPosMaxLimit",beklenenDeger:<ustLimit>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+
+# SanalPos Tek Çekim alt ve ust limit belirlenip Odeme Setiden Ozellistirildiğinin kontrol edilmesi posName:<posName>,altLimit:<altLimit>,ustLimit:<ustLimit>,yeniAltLimit:<yeniAltLimit>,yeniUstLimit:<yeniUstLimit>,odemeSetiName:<odemeSetiName>
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:<posName>,islemSec:"Güncelle"
+* Netahsilat popup tab gec. tabTitle:"Diğer Komisyon Oranları"
+* Netahsilat Odeme Sayfa inputName:"Alt Limit" id input giriş inputId="DefaultPosMinLimit",girilecekDeger:<altLimit>
+* Netahsilat Odeme Sayfa inputName:"Üst Limit" id input giriş inputId="DefaultPosMaxLimit",girilecekDeger:<ustLimit>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+* "3" Saniye Bekle
+* Netahsilat ANA Menu "SİTE YÖNETİMİ" Tıkla
+* Netahsilat Alt Menu menuAd:"POS AYARLARI",altMenuAd:"ÖDEME SETLERİ"
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:<odemeSetiName>,islemSec:"Bu ödeme setine bağlı sanal posları görüntüle"
+* "3" Saniye Bekle
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:"Akbank Test Posu",islemSec:"Güncelle"
+* Netahsilat popup tab gec. tabTitle:"Diğer Komisyon Oranları"
+* "3" Saniye Bekle
+* Netahsilat Tek  Cekim Pos checkbox secilsin mi? inputName:"tek çekim posu olsun",inputId:"IsDefaultPos" secilsinMi:"true"
+* Netahsilat inputName:"Alt Limit" id input degeri kontrol et inputId="DefaultPosMinLimit",beklenenDeger:<altLimit>
+* Netahsilat inputName:"Ust Limit" id input degeri kontrol et inputId="DefaultPosMaxLimit",beklenenDeger:<ustLimit>
+* Netahsilat Tek  Cekim Pos checkbox secilsin mi? inputName:"Ozellestir",inputId:"DefaultPosCommCustom_IsCustomCommRate" secilsinMi:"true"
+* "2" Saniye Bekle
+* Netahsilat Odeme Sayfa inputName:"Alt Limit" id input giriş inputId="DefaultPosMinLimit",girilecekDeger:<yeniAltLimit>
+* Netahsilat Odeme Sayfa inputName:"Üst Limit" id input giriş inputId="DefaultPosMaxLimit",girilecekDeger:<yeniUstLimit>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+* "2" Saniye Bekle
+* Netahsilat Sanal Poslar pos sec ve islem yap.posIsim:"Akbank Test Posu",islemSec:"Güncelle"
+* Netahsilat popup tab gec. tabTitle:"Diğer Komisyon Oranları"
+* Netahsilat inputName:"Alt Limit" id input degeri kontrol et inputId="DefaultPosMinLimit",beklenenDeger:<yeniAltLimit>
+* Netahsilat inputName:"Ust Limit" id input degeri kontrol et inputId="DefaultPosMaxLimit",beklenenDeger:<yeniUstLimit>
+* Netahsilat Tek  Cekim Pos checkbox secilsin mi? inputName:"Ozellestir",inputId:"DefaultPosCommCustom_IsCustomCommRate" secilsinMi:"false"
+* "2" Saniye Bekle
+* Netahsilat inputName:"Alt Limit" id input degeri kontrol et inputId="DefaultPosMinLimit",beklenenDeger:<altLimit>
+* Netahsilat inputName:"Ust Limit" id input degeri kontrol et inputId="DefaultPosMaxLimit",beklenenDeger:<ustLimit>
+* Netahsilat Kullanici Listesi Kullanici Ekle Tamam
+
+# Concept Limit Kontrol Netahsilat id Odeme DinamikAlan urunSec:<urunSec>,DinamikAlan aciklama:<aciklama>,DinamikAlan varYok:<varYok>,odemeTipiSec:<odemeTipi>,odemeSekliSec:<odemeSekliSec>,Tutar:<tutar>,AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,odemeAciklama:<odemeAciklama>,beklenenHataMesaj:<beklenenHataMesaj>
+* Netahsilat Odeme Sayfa Id selectName:"Ürün Seç",id selectId:"urnler_3",secilecekDeger:<urunSec>
+* Netahsilat Odeme Sayfa Id check click inputName:"Var - Yok",inputId:"varyok_6",chck:<varYok>
+* Netahsilat Odeme Sayfa inputName:"Açıklama" id input giriş inputId="aciklama_7",girilecekDeger:<aciklama>
+* Netahsilat Odeme Sayfa Odeme Tipi Sec odemeTipi:<odemeTipi>
+* Netahsilat Odeme Odeme Şekli Sec odemeSekli=<odemeSekliSec>
+* Netahsilat Odeme Sayfa inputName:"Tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Odeme Sayfa inputName:"Odeme Açıklama" id input giriş inputId="TransactionDescription",girilecekDeger:<odemeAciklama>
+* Netahsilat pasif gelen tek Cekim posu tikla
+* Netahsilat alertMessage text kontrol.beklenenText:<beklenenHataMesaj>
+
+# Concept Normal Netahsilat id Email Order Odeme AdSoyad:<adSoyad>,KartNo:<kartNo>,tarih:<tarih>,kartCvc:<kartCvc>,TCKimlikNo:<TCKimlikNo>,Email:<email>,telefon:<phone>,databasePosAd:<databasePosAd>,taksit:<taksit>,3DKullan:<3DKullan>,3DSifre:<3DSifre>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="CardHolderName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"Kart No" id input giriş inputId="CardNumber",girilecekDeger:<kartNo>
+* Netahsilat Odeme Sayfa inputName:"TC Kimlik No" id input giriş inputId="TKC",girilecekDeger:<TCKimlikNo>
+* Netahsilat Odeme Sayfa inputName:"Tarih" id input giriş inputId="CardExpireDate",girilecekDeger:<tarih>
+* Netahsilat Odeme Sayfa inputName:"Cvv" id input giriş inputId="CardCvv",girilecekDeger:<kartCvc>
+* Netahsilat Odeme Sayfa inputName:"Email" id input giriş inputId="Email",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Telefon" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat Normal Odeme taksit sec posDatabaseName:<databasePosAd>,taksit:<taksit>
+* Netahsilat Odeme 3D Kullan:<3DKullan>
+* Netahsilat Odeme Tamamla
+* Netahsilat Odeme 3D kodu gir 3DKullan=<3DKullan> ,3DKod=<3DSifre>
+* Netahsilat Normal basarili odeme referans numarası Al
+
+# Concept UyeliksiOdeme link Gonder ilkSayfa emailOrder:<emailOrder>,smsOrder:<smsOrder>,qrOrder:<qrOrder>,tutar:<tutar>,paraBirimi:<paraBirimi>,dil:<dil>
+* Netahsilat checkbox secilsin mi? inputName:"Email Order",inputId:"SendEmail" secilsinMi:<emailOrder>
+* Netahsilat checkbox secilsin mi? inputName:"SMS Order",inputId:"SendSMS" secilsinMi:<smsOrder>
+* Netahsilat checkbox secilsin mi? inputName:"QR Order",inputId:"SendQR" secilsinMi:<qrOrder>
+* Netahsilat Odeme Sayfa inputName:"tutar" id input giriş inputId="PureAmount",girilecekDeger:<tutar>
+* Netahsilat Odeme Sayfa Id selectName:"Para Birimi",id selectId:"CurrencyId",secilecekDeger:<paraBirimi>
+* Netahsilat Odeme Sayfa Id selectName:"Dil",id selectId:"LanguageId",secilecekDeger:<dil>
+* Netahsilat button input type click value:"Devam Et"
+
+# Concept Uyeliksiz Odeme unvan:<unvan>,adSoyad,<adSoyad>,email:<email>,phone:<phone>
+* Netahsilat Odeme Sayfa inputName:"Ünvan" id input giriş inputId="DisplayName",girilecekDeger:<unvan>
+* Netahsilat Odeme Sayfa inputName:"Ad Soyad" id input giriş inputId="FullName",girilecekDeger:<adSoyad>
+* Netahsilat Odeme Sayfa inputName:"EMail" id input giriş inputId="EMail",girilecekDeger:<email>
+* Netahsilat Odeme Sayfa inputName:"Phone" id input giriş inputId="Phone",girilecekDeger:<phone>
+* Netahsilat "Ekle" Butonuna Tıkla
+
+
+# Concept Pos Adi Listeleme posadi:<Posadi>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangic tarih yaz
+* Netahsilat İslem Listesi Pos Adi sec posadi:<Posadi>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept Bayi Kullanici Adi Listeleme bayikullaniciadi:<Bayikullaniciadi>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangic tarih yaz
+* Netahsilat İslem Listesi inputName:"Kullanici Adi" id input giriş inputId="VendorName",girilecekDeger:<Bayikullaniciadi>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept Odeme Kanali ile Listeleme selectname:<OdemeKanali>,id:<ID>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangic tarih yaz
+* Netahsilat İslem Listesi Odeme Kanali selectname:<OdemeKanali>,id:<ID> sec
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,defaultlistboxname:<Defaultname>,idname:<Idname>,listboxname:<Listboxname>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi listbox sec defaultlistboxname<Defaultname>, idname:<Idname>, listboxname:<Listboxname>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept İslem Durumu Basarili Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept Taksit Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,defaultlistboxname:<Defaultname>,idname:<Idname>,listboxname:<Listboxname>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi listbox sec defaultlistboxname<Defaultname>, idname:<Idname>, listboxname:<Listboxname>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept input Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,InputID:<Inputid>,girilecekDeger:<GirilecekDeger>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi inputName:"ReferenceNumber" id input giriş inputId=<Inputid>,girilecekDeger:<GirilecekDeger>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept select Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,selectname:<OdemeKanali>,id:<ID>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi Odeme Kanali selectname:<OdemeKanali>,id:<ID> sec
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu
+
+# Concept iade edilen islemler Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,selectname:<OdemeKanali>,id:<ID>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi Odeme Kanali selectname:<OdemeKanali>,id:<ID> sec
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat iade edilen islemler Listesi gridinde bakiye degerinin tutar degerinden kücük veya sıfır olmasi kontrolu
+
+
+# Concept iptal ya da iade edilmemis islemler Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,selectname:<OdemeKanali>,id:<ID>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi Odeme Kanali selectname:<OdemeKanali>,id:<ID> sec
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat iptal ya da iade edilmemis transactions Listesi gridinde bakiye degerinin tutar degerine esit olmasi kontrolu
+
+# Concept iptal edilen islemler Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,selectname:<OdemeKanali>,id:<ID>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi Odeme Kanali selectname:<OdemeKanali>,id:<ID> sec
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat iptal edilen islemler Listesi gridinde bakiye kolonu sifir olmasinin kontrolu
+
+# Concept Kullanici ile Listeleme baslangictarihi:<Baslangic>,bitistarihi:<Bitis>,inputid:<InputId>,inputyaz:<Inputyaz>,kontroledilecekdataadi:<Dataadi>
+* Netahsilat İslem Listesi baslangictarihi:<Baslangic> ve bitistarih:<Bitis> yaz
+* Netahsilat İslem Listesi inputName:"Kullanici Adi" id input giriş inputId=<InputId>,girilecekDeger:<Inputyaz>
+* Netahsilat İslem Listesi Listele butonuna tikla
+* Netahsilat İslem Listesi gridinde dataadi:<Dataadi> olanlar kontrolu

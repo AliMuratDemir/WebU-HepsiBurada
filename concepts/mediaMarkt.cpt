@@ -1,0 +1,7 @@
+Created by fatih.karadag on 26.08.2020
+
+This is a concept file with following syntax for each concept.
+# Concept Sepeti Bosalt giris bilgileri  KullaniciAdi=<kAdi>,Sifre=<password>
+* Giris yap k.Adi:<kAdi>,password:<password>
+* Sepetdeki urunleri cikar
+* Anasayfaya Git

@@ -1,0 +1,26 @@
+Created by alimurat.demir on 29/03/2022
+
+This is a concept file with following syntax for each concept.
+# Giris Yap <email>,<sifre>
+* Butona tikla ButtonID ="myAccount"
+* Butona tikla ButtonID ="login"
+* Element gelene kadar bekle ButonID="btnLogin"
+* Text gir InputID="txtUserName", GirilecekInput=<email>
+* Butona tikla ButtonID ="btnLogin"
+* Text gir InputID="txtPassword", GirilecekInput=<sifre>
+* Butona tikla ButtonID ="btnEmailSelect"
+
+# Urun Sepete Ekle
+* Urun Ekle UrunSayisi="1"
+* Sepete ekle butonuna tikla
+* Sepete ekle butonuna tikla
+* Urun Ekle UrunSayisi="2"
+* Sepete ekle butonuna tikla
+* Sepete ekle butonuna tikla
+
+# Secilen urunlerin dogrulanmasının kontrolu
+* Sepetim butonuna tikla
+* Sepete eklenen urunlerin dogrulanması "1","2"
+
+
+

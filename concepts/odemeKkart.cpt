@@ -1,0 +1,79 @@
+Created by fatih.karadag on 13.08.2020
+
+# Concept Butun taksit Kontrol Odeme KrediKart,<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>,<3DSifre>,taksit:<taksit> Kontroller Taksitler=<Taksitler>,3DzorunluMu=<3DzorunluMu>,logoOlmalimi=<logoDurum>,logoTitle=<logoTitle>,bilgilendirmeFormuOdemeSekli=<odemeSekli>
+* Odeme sayfa yüklenme hatası aşmak için kullanılır
+* Odeme Kkart Bilgileri Doldur;<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>
+* Odeme Pos Logo Kontrol;logoOlmalimi=<logoDurum>,logoTitle=<logoTitle>
+* Odeme Threed Zorunlu kontrol 3DzorunluMu=<3DzorunluMu>
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme TaksitSec taksit:<taksit>
+* Odeme odeme Sekli kontrol bilgilendirmeFormuOdemeSekli:<odemeSekli>
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+//* Odeme 3D kodu gir 3DzorunluMu=<3DzorunluMu> ,3DKod=<3DSifre>
+//* Odeme Basarili kontrol
+
+
+# Concept Artı Taksit Bilgi Mesaj Kontrol KrediKart,<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>,<3DSifre>,taksit:<taksit> Kontroller Taksitler=<Taksitler>,3DzorunluMu=<3DzorunluMu>,logoOlmalimi=<logoDurum>,logoTitle=<logoTitle>,artiTaksitMesaj=<artiTaksitMesaj>
+* Odeme sayfa yüklenme hatası aşmak için kullanılır
+* Odeme Kkart Bilgileri Doldur;<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>
+* Odeme Pos Logo Kontrol;logoOlmalimi=<logoDurum>,logoTitle=<logoTitle>
+* Odeme Threed Zorunlu kontrol 3DzorunluMu=<3DzorunluMu>
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme TaksitSec taksit:<taksit>
+* Odeme arti taksit bilgi Mesaj kontrol mesaj:<artiTaksitMesaj>
+
+
+# Concept Threed Vazgec Odeme KrediKart,<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>,<3DSifre>
+* Odeme sayfa yüklenme hatası aşmak için kullanılır
+* Odeme Kkart Bilgileri Doldur;<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+* Odeme threed vazgeç
+
+
+# Concept Butun taksit ve taksit tutarlari kontrol Odeme KrediKart,<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>,<3DSifre> Kontroller Taksitler=<Taksitler>
+* Odeme sayfa yüklenme hatası aşmak için kullanılır
+* Odeme Kkart Bilgileri Doldur;<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme Taksit Tutarlari Kontrol
+
+
+
+
+# Concept Odeme KrediKart,<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>,<3DSifre>,taksit:<taksit> Kontroller Taksitler=<Taksitler>,3DzorunluMu=<3DzorunluMu>
+* Odeme sayfa yüklenme hatası aşmak için kullanılır
+* Odeme Kkart Bilgileri Doldur;<KKartNo>,<KkartAy>,<KkartYil>,<KkartCvc>
+* Odeme Threed Zorunlu kontrol 3DzorunluMu=<3DzorunluMu>
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme TaksitSec taksit:<taksit>
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+* Odeme 3D kodu gir 3DzorunluMu=<3DzorunluMu> ,3DKod=<3DSifre>
+* Odeme Basarili kontrol
+
+
+# Concept Odeme KayitliKart,<kartAd>,cvcKod:<cvcKod> Kontroller Taksitler=<Taksitler>,3DzorunluMu=<3DzorunluMu>,3DKod=<3DSifre>
+* Odeme sayfa yüklenme hatası masterPass icin
+* Odeme Kayitli Kart seçilecek kart:<kartAd>
+* "3" Saniye Bekle
+* Odeme Kayitlı kart ile odeme cvc kod gir.kartAdi:<kartAd>cvcKod:<cvcKod>
+* "3" Saniye Bekle
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme Threed Zorunlu kontrol 3DzorunluMu=<3DzorunluMu>
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+* Odeme 3D kodu gir 3DzorunluMu=<3DzorunluMu> ,3DKod=<3DSifre>
+* Odeme Basarili kontrol
+
+# Concept BKM Ekspress ile odeme
+* Bkm express odeme tipi kontrol et
+* Odeme Sayfasi Odenecek Tutar Al.
+* BKM Taksit kontrol
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+* Bkm Express sayfasi Kontrol
+
+# Concept KayitliKart Butun taksit Kontrol Odeme KrediKart,kartAd:<kartAd> Kontroller Taksitler=<Taksitler>,3DzorunluMu=<3DzorunluMu>
+* Odeme sayfa yüklenme hatası masterPass icin
+* KayitliKart Kart sec KartAd:<kartAd>
+* Odeme Threed Zorunlu kontrol 3DzorunluMu=<3DzorunluMu>
+* Odeme Taksit Kontrol taksitler:<Taksitler>
+* Odeme bilgilendirme formu sec ve odemeyi tamamla
+//* Odeme 3D kodu gir 3DzorunluMu=<3DzorunluMu> ,3DKod=<3DSifre>
+//* Odeme Basarili kontrol
